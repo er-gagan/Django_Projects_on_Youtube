@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div id="FirstDiv">
+        <h1>Student Registration Form</h1>
+        <div id="SecondDiv">
+            <form action="/submit" method="post">
+                {% csrf_token %}
+                <h4 id="FN">First Name <input type="text" name="First_Name"></h4>
+                <h4 id="MN">Middle Name <input type="text" name="Middle_Name"></h4>
+                <h4 id="LN">Last Name <input type="text" name="Last_Name"></h4>
+                <h4 id="PN">Phone Number <input type="text" name="Phone_Number"></h4>
+                <h4 id="CN">College Name <input type="text" name="College_Name"></h4>
+                <h4 id="HA">Home Address <input type="text" name="Home_Address"></h4>
+                <h4 id="Gen">Gender Male <input type="radio" value="MALE" name="Gender"> Female<input type="radio" value="FEMALE" name="Gender"></h4>
+                <h4>Area Of Intrest 
+                    Programming<input type="Checkbox" name="Programming" value="Programming">
+                    Singing<input type="Checkbox" name="Singing" value="Singing">
+                    Dancing<input type="Checkbox" name="Dancing" value="Dancing">
+                    Studying<input type="Checkbox" name="Studying" value="Studying">
+                    Playing<input type="Checkbox" name="Playing" value="Playing">
+                </h4>
+                <h1>{{msg}}</h1>
+                <input type="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

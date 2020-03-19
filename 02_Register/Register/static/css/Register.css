@@ -1,0 +1,16 @@
+h1
+{
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 5px;
+}
+#SecondDiv
+{
+    background-color: lightgreen;
+    margin: 20px;
+    padding: 5px;
+}
+#FirstDiv
+{
+    max-width: fit-content;
+}
