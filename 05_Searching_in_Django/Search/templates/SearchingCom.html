@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'SearchingCom.css' %}">
+    <title>Company Search</title>
+</head>
+<body>
+<a href="/">Home</a>
+    <div id="DivID">
+        <form action="/ComData">
+            <h2>Enter Some Data <input type="text" name="data">&nbsp;<input type="Submit"></h2>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#Heading
+{
+    max-width: fit-content;
+    background-color: goldenrod;
+    padding: 1px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#Content
+{
+    max-width: fit-content;
+    background-color: indianred;
+    padding: 8px;
+    margin: auto;
+}
+
+#btn
+{
+    margin-left: 35%;
+}

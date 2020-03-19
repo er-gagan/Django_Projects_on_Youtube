@@ -1,0 +1,21 @@
+#Heading
+{
+    max-width: fit-content;
+    background-color: darkseagreen;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#Content
+{
+    max-width: fit-content;
+    background-color: darkkhaki;
+    padding: 7px;
+    margin: auto;
+}
+
+#btn
+{
+    margin-left: 35%;
+}
