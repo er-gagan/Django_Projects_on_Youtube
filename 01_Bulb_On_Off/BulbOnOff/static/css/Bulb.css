@@ -1,0 +1,23 @@
+#btn
+{
+    text-align: center;
+    margin-left: 135px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 150px;
+    height: 50px;
+}
+
+img
+{
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+#Container
+{
+    width: 400px;
+    margin-left: 370px;
+}
