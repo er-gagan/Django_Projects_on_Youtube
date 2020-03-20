@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>CRUD Operations</title>
+</head>
+<body>
+    {{msg}}
+    <div id="DivTwo">
+        <form action="/show">
+            <input type="submit" value="Show Records">
+        </form>
+    </div>
+
+    <div id="DivOne">
+        <form action="/send" method="post">
+            {% csrf_token %}
+            <h3>ID <input required autofocus type="text" name="id" id="id"></h3>
+            <h3>Data 1 <input type="text" name="data1"></h3>
+            <h3>Data 2 <input type="text" name="data2"></h3>
+            <input type="submit" id="btn">
+        </form>
+    </div>
+</body>
+</html>

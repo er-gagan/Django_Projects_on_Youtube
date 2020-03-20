@@ -1,0 +1,31 @@
+body
+{
+    background-color: rgb(107, 189, 152);
+}
+
+#head
+{
+    text-align: center;
+    max-width: 80%;
+    margin-left: 9%;
+    padding: 0.5%;
+    background-color: rgb(226, 225, 223);
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+td,th{
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #18c577;
+}

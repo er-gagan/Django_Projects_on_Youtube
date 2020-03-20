@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'show.css' %}">
+    <title>Show Data</title>
+</head>
+<body>
+    {{msg}}
+    <h2 id="head">Show All Data</h2>
+    <div id="SecondDiv">
+        <form action="/">
+            <input type="Submit" value="<< Back">
+        </form>
+    </div>
+    <div id="OneDiv">
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Data 1</th>
+                <th>Data 2</th>
+                <th>Buttons</th>
+            </thead>
+            {% for d in data %}
+                <tr>
+                    <td>{{d.ID}}</td>
+                    <td>{{d.data1}}</td>
+                    <td>{{d.data2}}</td>
+                    <td>
+                        <a href="/edit?id={{d.ID}}">Edit</a>
+                        <a href="/delete?id={{d.ID}}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
