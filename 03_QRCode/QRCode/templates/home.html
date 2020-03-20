@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+    <title>Qr Code Generator</title>
+</head>
+<body>
+    <div id="Main_Div">
+        <form action="/send" method="post">
+            {% csrf_token %}
+            <h1 id="h1">Enter Some Data <input type="text" name="data" id="Entry"></h1>
+            <input type="submit" value="Generate QR Code" id="btn">
+        </form>
+    </div>
+    <div id="ans_div">
+        <h1 id="ans_had">Your Qr Code is: </h1>
+    </div>
+    <div id="QR">
+        {% if data %}
+            <img src="{% static 'image/test.png' %}" alt="No Image">
+        {% else %}
+            <h1>Please Enter Usefull data into datafield to generate some data related Qr Code</h1>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body
+{
+    background-color: aquamarine;
+}
+#h1
+{
+    margin-left: 10px;
+    margin-top: 210px;
+    color: #9eec0d;
+}
+
+#Main_Div
+{
+    background-color: rgb(255, 0, 85);
+    width: 520px;
+}
+
+#Entry
+{
+    width: 250px;
+    height: 25px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+#btn
+{
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+#ans_div
+{
+    background-color: orange;
+    margin-left: 650px;
+    margin-top: -250px;
+    width: 290px;
+}
+
+#ans_had
+{
+    text-align: center;
+    padding: 10px;
+}
+
+#QR
+{
+    background-color: rgb(255, 255, 255);
+    margin-left: 650px;
+    width: 290px;
+    height: 250px;
+}
