@@ -37,7 +37,11 @@ def CompanyData(request):
 
 def EmpData(request):
     data = request.GET['data']
-    return render(request,"SearchingEmp.html")
+    # Info = EmployeeClass.objects.filter(Name__exact=data)
+    # Info = EmployeeClass.objects.filter(Name__iexact=data)
+    # Info = EmployeeClass.objects.exclude(Name__exact=data)
+    Info = EmployeeClass.objects.exclude(Name__iexact=data)
+    return render(request,"SearchingEmp.html",{'Info':Info})
 
 def ComData(request):
     data = request.GET['data']

@@ -17,5 +17,14 @@
     <form action="/ViewEmpData">
         <input type="Submit" value="View Employee Data">
     </form>
+
+    
+    {% for data in Info %}
+        {{data.Employee_ID}}
+        {{data.Name}}
+        {{data.Age}}
+        {{data.Phone}}
+        {{data.City}} <br>
+    {% endfor %}
 </body>
 </html>
