@@ -49,7 +49,8 @@ def ComData(request):
 
 def ViewEmpData(request):
     EmpData = EmployeeClass.objects.all()
-    count = EmployeeClass.objects.count()
+    # count = EmployeeClass.objects.count()
     # Rec = EmployeeClass.objects.all()[0:5:1] # [start:stop:step]
-    Rec = EmployeeClass.objects.all()[::-1] # print all data in reverse order
-    return render(request,"ViewEmpData.html",{'EmpData':EmpData,'count':count,'Rec':Rec})
+    # Rec = EmployeeClass.objects.all()[::-1] # print all data in reverse order
+    Age = EmployeeClass.objects.filter(Age__lte=33)
+    return render(request,"ViewEmpData.html",{'EmpData':EmpData,'Age':Age})
